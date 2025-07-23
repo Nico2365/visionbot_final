@@ -1,0 +1,19 @@
+// src/firebase.ts
+import { initializeApp } from "firebase/app";
+import { getAuth } from "firebase/auth";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyC9JhGANg08NqhSWPwrE1BoPVLa1PFZ6PY",
+  authDomain: "visionbot-35ec5.firebaseapp.com",
+  projectId: "visionbot-35ec5",
+  storageBucket: "visionbot-35ec5.appspot.com",
+  messagingSenderId: "649920195432",
+  appId: "1:649920195432:web:1b329db3d0668a7f69c4dd",
+  measurementId: "G-8SG9TT90RS"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+
+// Export services (z. B. Auth)
+export const auth = getAuth(app);
